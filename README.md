@@ -1,54 +1,38 @@
-🏆 StreamsTask
+# 🏆 StreamsTask
 
-📌 Описание
+## 📌 Description
+StreamsTask is a C# console application that manages teams and players. It allows creating teams, adding and removing players, and logging actions into TXT and Excel files.
 
-StreamsTask е конзолно приложение на C#, което управлява отбори и играчи. Позволява създаване на отбори, добавяне и премахване на играчи, както и логване на действията в TXT и Excel файлове.
+## 🎮 Features
 
-🎮 Функционалност
+### 📌 Main Commands:
+- `create_team <team_name>` – Creates a new team.
+- `create_player <name> <position>` – Creates a new player without adding them to a team.
+- `add_player <team_name> <player_name> <position>` – Adds a player to a team.
+- `remove_player <team_name> <player_name>` – Removes a player from a team.
 
-📌 Основни команди:
+### 📝 Logging and Output:
+- `print_team <team_name> <file_path> <log_type (txt/xlsx)>` – Saves the team to a file.
+- `print_log_txt <team_name> <file_path>` – Saves the team's history to a text file.
+- `print_log_excel <team_name> <file_path>` – Saves the team's history to an Excel file.
 
-create_team <име на отбора> – Създава нов отбор.
+### 📜 The team history includes:
+- 📅 When the team was created.
+- 🔄 When a player joined.
+- ❌ When a player left.
 
-create_player <име> <позиция> – Създава нов играч без да го добавя в отбор.
+## 🚀 How to Run
+The program runs continuously until the user enters `exit`. To start:
+1. Compile the project.
+2. Run the executable file.
+3. Enter commands in the console.
 
-add_player <име на отбора> <име на играч> <позиция> – Добавя играч към отбор.
+🎉 Enjoy managing your teams! 🏆
 
-remove_player <име на отбора> <име на играч> – Премахва играч от отбор.
+## 🤝 Contributing
 
-📝 Логване и извеждане:
+Found a bug? Want to improve something?  
+🔧 Feel free to open an issue or submit a PR!  
 
-print_team <име на отбора> <път до файла> <тип лог (txt/xlsx)> – Записва отбора в файл.
-
-print_log_txt <име на отбора> <път до файла> – Запазва историята на отбора в текстов файл.
-
-print_log_excel <име на отбора> <път до файла> – Запазва историята на отбора в Excel файл.
-
-📜 Историята на отбора съдържа:
-
-📅 Кога е създаден отборът.
-
-🔄 Кога играч се е присъединил.
-
-❌ Кога играч е напуснал.
-
-🚀 Стартиране
-
-Програмата работи в непрекъснат режим, докато потребителят не въведе exit. За да стартирате:
-
-Компилирайте проекта.
-
-Стартирайте изпълнимия файл.
-
-Въвеждайте команди в конзолата.
-
-🎉 Приятно управление на отборите! 🏆
-
-🤝 Contributing
-
-Found a bug? Want to improve something?
-🔧 Feel free to open an issue or submit a PR!
-
-Made with ❤️ by [Alex Stefanov]
+Made with ❤️ by [Alex Stefanov]  
 🚀 Powered by C# | ⚡ Built with .NET | ✨ Inspired by team management
-
